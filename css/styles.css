@@ -1,0 +1,232 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #0e1823;
+  color: #fbfbfb;
+}
+
+.container {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 99999999999;
+  max-width: 335px;
+  height: 42px;
+  padding: 12px 20px 13px 20px;
+  border-radius: 8px;
+  border: 1px solid #fbfbfb;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+}
+.header-logo {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #1b414b;
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+.nav-list,
+.social-media-list {
+  display: none;
+}
+
+.burger-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  padding: 0;
+  right: 20px;
+  line-height: 0;
+}
+.icon-burger {
+  stroke: #1b414b;
+}
+
+@media screen and (max-width: 767px) {
+  .icon-burger {
+    stroke: #1b414b;
+  }
+}
+/* hero */
+
+.hero {
+  padding-top: 260px;
+  padding-bottom: 243px;
+  background-image: linear-gradient(
+      359deg,
+      rgba(17, 19, 31, 0.8) 42.62%,
+      rgba(17, 19, 31, 0.31) 84.12%,
+      rgba(17, 19, 31, 0) 99.94%
+    ),
+    url(../img/desktop-1440/hero_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-page {
+    background-image: linear-gradient(
+        rgba(17, 19, 31, 0.8),
+        rgba(17, 19, 31, 0.31),
+        rgba(17, 19, 31, 0)
+      ),
+      url(../img/desktop-1440/hero-mob-image-2x.jpg),
+      lightgray -363.632px -322.699px / 294.966% 170.401% no-repeat;
+  }
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 24px;
+}
+.hero-text {
+  max-width: 335px;
+  color: rgba(251, 251, 251, 0.7);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.16em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 38px;
+}
+.hero-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 141px;
+  padding: 14px 32px;
+  background: #1b414b;
+  color: #fbfbfb;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
